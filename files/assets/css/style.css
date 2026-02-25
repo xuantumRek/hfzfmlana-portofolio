@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap');
+
+:root {
+    --primary-color: #120B2D;
+    --accent-color: 70, 221, 217;
+    --text-color: #FFFFFF;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    background: var(--primary-color);
+    color: var(--text-color);
+    letter-spacing:.05em;
+    margin:0;padding:0;font-family: 'Noto Sans JP', sans-serif;overflow-x: hidden;-webkit-text-size-adjust: 100%;word-wrap: break-word;-ms-overflow-style: none; scrollbar-width: none;
+}
+
+ol,ul,li {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+dl,dt,dd {
+    margin:0;
+    padding:0;
+}
+
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;margin:0;padding:0;}
+p {margin:0;padding:0;}
+a, a img { overflow: hidden; color:#46ddd9;letter-spacing: .3em;text-decoration:none;border:none;-webkit-transition: all 0.2s;-moz-transition: all 0.2s;-ms-transition: all 0.2s;-o-transition: all 0.2s;transition: all 0.2s;}
+a:hover,a:active {opacity:.7;border:none;outline:none;}
+a:hover img , a:active img {opacity:1;border:none;outline:none;}
+b {font-weight:400;}
+pre {font-family: 'Noto Sans JP', sans-serif;font-weight:300;}
+
+h1 {font-weight:normal;}
+h2 {font-weight:normal;}
+h3 {font-weight:400;}
+img {max-width: 100%;width:auto;height: auto;display:block;pointer-events: none;-webkit-touch-callout:none;-webkit-user-select:none;-moz-touch-callout:none;-moz-user-select:none;user-select:none;}
+* {box-sizing:border-box;outline:none;}
+main:after,
+article:after,
+section:after,
+div:after,
+ul:after,
+li:after,
+dl:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.pc {display:none;}
+
+/* body {font-size:3.5vw;line-height:1.7;letter-spacing:.05em;color:#fff;display: block;background-color:#2b2e38;} */
+#wrap {overflow:hidden;}
+
+.fade {opacity: 0;transition : opacity .3s ease-in;}
+.fade.in {opacity: 1;}
+
+.fadein > * {opacity: 0;transition : opacity .3s ease-in;}
+.fadein > *.in {opacity: 1;}
+
+.footer {padding: 0;padding-top: 5em;background: #120B2D;}
+.footer_navi {text-align:center;margin-bottom: 4em;}
+.footer_navi li {display:inline-block;vertical-align:top;margin:0 .4em;font-family: "Noto Sans JP", sans-serif;font-weight: 400;letter-spacing: .1em;line-height: 2.2;}
+.footer_navi li a {color:#fff;}
+.copyright {font-size:.8em;text-align:center;color:#aaa;padding-bottom:4em;font-weight: 300;}
+
+.footer {padding-top: 8em;}
+.footer_navi li { margin: 0; line-height: 1;}
+.footer_navi li:after {content: "/";display: inline-block;vertical-align: top; margin: 0 0.6em 0 0.8em;line-height: 1;}
+.footer_navi li:last-child:after {display:none;}
