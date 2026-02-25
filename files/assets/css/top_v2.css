@@ -40,15 +40,14 @@
 .post_data span.date:after {content: "／";margin: 0 0.5em;display: inline-block;vertical-align: middle;font-size: .9em;}
 
 .viewbtn {margin: 3em 0 0;text-align: right;}
-.viewbtn a {display: inline-block;font-family: "Noto Sans JP", sans-serif;font-weight: 400;letter-spacing: .2em;text-indent:.2em;line-height: 1;position: relative;color: #fff;width: 10em;text-align: center;padding-bottom: 0.8em;}
-.viewbtn a:before {content: "";border: solid #fff;border-width: 1px 0 0 0;position: absolute;width: 100%;bottom: 0;right: 0;}
-.viewbtn.sub {display:none;}
+.viewbtn a {display: inline-block;position: relative;font-family: "Noto Sans JP", sans-serif;font-weight: 400;letter-spacing: 5px;text-indent: 5px;line-height: 1;color: #fff;padding-bottom: 1.2em;}
+.viewbtn a:hover {color: rgba(70, 221, 217, 0.85);opacity: 1;}
+.viewbtn a::after {content: '';position: absolute;bottom: 0;left: 50%;width: 0%;height: 1px;background-color: rgba(70, 221, 217, 0.85);transform: translateX(-50%);transition: width 0.3s ease-out;}
+.viewbtn a:hover::after {width: 100%;}
 
 .profile {position:relative;}
 .profile .midashi {position: absolute;top: 5em;margin-bottom: 0;right:-0.6em;z-index: 1;}
-.profile_in {position: relative;
-    z-index: 1;
-}
+.profile_in {position: relative;z-index: 1;}
 .profile_img {width: 40%;margin-left:-5%;}
 .profile_img span {background-image: url(/files/assets/img/profile.webp);display: block;background-repeat: no-repeat;background-position: center 0;padding-top: 150%;background-size: cover;}
 .profile_in .details {margin-top: 2em;float: right;width: 85%;}
@@ -58,9 +57,11 @@
 .profile_in .details ul {margin-top:1.5em;}
 .profile_in .details li {margin-bottom:1.5em; width: 75%; display: flex; align-items: flex-start;}
 .profile_in .details li span {min-width: 12em; width: 12em; display: block; flex-shrink: 0;}
-
 .profile_in .details .works_link {margin-top: 2em;text-align: center;}
-.profile_in .details .works_link a {display: inline-block;font-family: "Noto Sans JP", sans-serif;font-weight: 400;letter-spacing: .2em;text-indent: 0.2em;line-height: 1;position: relative;color: #fff;width: 10em;text-align: center;padding-bottom: 0.8em;border-bottom: 1px solid #fff;}
+.profile_in .details .works_link a {display: inline-block;position: relative;font-family: "Noto Sans JP", sans-serif;font-weight: 400;letter-spacing: 5px;text-indent: 5px;line-height: 1;color: #fff;padding-bottom: 1.2em;}
+.profile_in .details .works_link a:hover {color: rgba(70, 221, 217, 0.85);opacity: 1;}
+.profile_in .details .works_link a::after {content: '';position: absolute;bottom: 0;left: 50%;width: 0%;height: 1px;background-color: rgba(70, 221, 217, 0.85);transform: translateX(-50%);transition: width 0.3s ease-out;}
+.profile_in .details .works_link a:hover::after {width: 100%;}
 
 @media screen and (orientation: landscape) {
 .mainimg .item span.pc {display:block;}
@@ -92,7 +93,7 @@
 .profile_in > div {padding:0 3%;}
 .profile_img {width: 45%;margin-left: 0;max-width: 450px;}
 .profile_in .details {width: auto;margin-top: 0;float: none;}
-.profile_in .details .works_link {text-align: left;}
+.profile_in .details .works_link {text-align: center;}
 }
 
 @media screen and (min-width:1024px) {
